@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Copa do Brasil de Pickleball 2026 · 11, 12 e 13 de dezembro · Rio de Janeiro</title>
+<meta name="description" content="Copa do Brasil de Pickleball 2026 — 11, 12 e 13 de dezembro, no Pickleball Barra, no Clube de Aeronáutica, Barra da Tijuca, Rio de Janeiro. Realização APRJ, chancela CBP.">
+<meta property="og:title" content="Copa do Brasil de Pickleball 2026">
+<meta property="og:description" content="11, 12 e 13 de dezembro de 2026 · Pickleball Barra, no Clube de Aeronáutica · Rio de Janeiro">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Archivo+Black&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061B46;
+  --navy-2:#0A2559;
+  --gold:#FFC72C;
+  --white:#FFFFFF;
+  --grey:#EEF1F6;
+  --green:#009739;
+  --ink:#0C1526;
+  --muted:#5A6A85;
+  --line:rgba(255,255,255,.16);
+  --maxw:1140px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{
+  margin:0;
+  background:var(--white);
+  color:var(--ink);
+  font-family:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* ---------- tipografia ---------- */
+.display{
+  font-family:'Archivo Black',Impact,sans-serif;
+  text-transform:uppercase;
+  line-height:.92;
+  letter-spacing:.01em;
+  margin:0;
+}
+h2.title{
+  font-family:'Archivo Black',Impact,sans-serif;
+  text-transform:uppercase;
+  font-size:clamp(28px,4.2vw,44px);
+  line-height:1.02;
+  letter-spacing:.01em;
+  margin:0 0 18px;
+}
+.eyebrow{
+  font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);margin:0 0 14px;
+}
+.lead{font-size:clamp(17px,2vw,20px);max-width:62ch;color:var(--muted)}
+section .lead{margin-top:0}
+.rule{width:64px;height:5px;background:var(--gold);border:0;margin:0 0 22px}
+
+/* ---------- blocos ---------- */
+.dark{background:var(--navy);color:var(--white)}
+.dark .lead{color:rgba(255,255,255,.76)}
+.light{background:var(--white)}
+.soft{background:var(--grey)}
+.block{padding:clamp(56px,8vw,104px) 0}
+
+/* círculos (buraco da bola) — textura de fundo */
+.dots{position:relative;overflow:hidden}
+.dots::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:
+    radial-gradient(circle at 78% 18%, transparent 58px, rgba(255,255,255,.07) 59px, rgba(255,255,255,.07) 61px, transparent 62px),
+    radial-gradient(circle at 92% 46%, transparent 30px, rgba(255,255,255,.08) 31px, rgba(255,255,255,.08) 33px, transparent 34px),
+    radial-gradient(circle at 66% 78%, transparent 44px, rgba(255,255,255,.06) 45px, rgba(255,255,255,.06) 47px, transparent 48px),
+    radial-gradient(circle at 86% 88%, transparent 18px, rgba(255,255,255,.09) 19px, rgba(255,255,255,.09) 21px, transparent 22px);
+}
+.dots > *{position:relative;z-index:1}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(6,27,70,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.bar{display:flex;align-items:center;gap:22px;height:68px}
+.bar img{height:30px;width:auto}
+nav.menu{margin-left:auto;display:flex;gap:26px;align-items:center}
+nav.menu a{
+  color:rgba(255,255,255,.82);text-decoration:none;font-size:14px;font-weight:600;
+  padding:6px 0;border-bottom:2px solid transparent;
+}
+nav.menu a:hover,nav.menu a:focus-visible{color:#fff;border-bottom-color:var(--gold)}
+@media(max-width:900px){nav.menu{display:none}}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:15px;text-decoration:none;
+  padding:14px 26px;border-radius:2px;border:2px solid transparent;cursor:pointer;
+  transition:background .15s ease,color .15s ease;
+}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-gold:hover{background:#ffd75e}
+.btn-ghost{border-color:rgba(255,255,255,.5);color:#fff}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-2)}
+.btn-sm{padding:10px 18px;font-size:14px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* ---------- hero ---------- */
+.hero{background:var(--navy);color:#fff;padding:clamp(48px,7vw,86px) 0 clamp(40px,6vw,64px)}
+.hero .display{font-size:clamp(40px,8.4vw,92px)}
+.hero .year{color:var(--gold);display:block}
+.hero-meta{margin:26px 0 0;font-size:clamp(15px,2vw,18px);font-weight:600;letter-spacing:.02em}
+.hero-meta span{display:block;color:rgba(255,255,255,.7);font-weight:400;margin-top:4px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero-note{margin-top:18px;font-size:13px;color:rgba(255,255,255,.55)}
+
+/* contagem regressiva */
+.count{border-top:1px solid var(--line);margin-top:44px;padding-top:26px;display:flex;gap:clamp(18px,5vw,54px);align-items:flex-end;flex-wrap:wrap}
+.count-label{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);width:100%;margin-bottom:-6px}
+.count div.unit{min-width:64px}
+.count .num{font-family:'Archivo Black',sans-serif;font-size:clamp(34px,6vw,58px);line-height:1;font-variant-numeric:tabular-nums}
+.count .cap{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:8px}
+
+/* ---------- números ---------- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.16)}
+.stats div{background:var(--navy);padding:26px 22px}
+.stats .n{font-family:'Archivo Black',sans-serif;font-size:clamp(28px,4vw,40px);line-height:1;color:var(--gold)}
+.stats p{margin:10px 0 0;font-size:14px;color:rgba(255,255,255,.78);line-height:1.45}
+
+/* ---------- colunas ---------- */
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(24px,4vw,48px)}
+.cols-2{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,64px);align-items:start}
+@media(max-width:820px){.cols-2{grid-template-columns:1fr}}
+.item h3{font-size:18px;margin:0 0 8px;font-weight:700}
+.item p{margin:0;color:var(--muted);font-size:15.5px}
+.item{border-top:3px solid var(--navy);padding-top:16px}
+.dark .item{border-top-color:var(--gold)}
+.dark .item p{color:rgba(255,255,255,.75)}
+
+/* listas de categoria */
+.cat{border-top:1px solid #D8DFEA;padding:18px 0;display:grid;grid-template-columns:200px 1fr;gap:20px}
+.cat:last-child{border-bottom:1px solid #D8DFEA}
+.cat b{font-size:15px;letter-spacing:.02em}
+.cat p{margin:0;color:var(--muted);font-size:15.5px}
+@media(max-width:640px){.cat{grid-template-columns:1fr;gap:4px}}
+
+/* tabela de inscrições */
+table{width:100%;border-collapse:collapse;font-size:15.5px;margin-top:8px}
+th,td{text-align:left;padding:13px 14px;border-bottom:1px solid #D8DFEA}
+thead th{background:var(--navy);color:#fff;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;border:0}
+tbody tr:nth-child(even){background:#F7F9FC}
+td.val{font-weight:700;font-variant-numeric:tabular-nums}
+.tag{display:inline-block;background:var(--gold);color:var(--navy);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;border-radius:2px;vertical-align:middle}
+.small{font-size:13.5px;color:var(--muted);margin-top:14px}
+.dark .small{color:rgba(255,255,255,.6)}
+
+/* programação */
+.days{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.day{background:#fff;border:1px solid #D8DFEA;padding:24px}
+.day h3{margin:0;font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:20px;color:var(--navy)}
+.day .date{font-size:13px;color:var(--muted);margin:4px 0 16px}
+.day ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
+.day li{margin-bottom:7px}
+
+/* sede */
+.venue-facts{list-style:none;margin:22px 0 0;padding:0}
+.venue-facts li{padding:12px 0;border-top:1px solid var(--line);font-size:15.5px;color:rgba(255,255,255,.8)}
+.legacy{border:1px solid var(--gold);padding:24px;margin-top:26px}
+.legacy .n{font-family:'Archivo Black',sans-serif;font-size:clamp(26px,4vw,34px);color:var(--gold);line-height:1}
+.legacy p{margin:10px 0 0;font-size:15px;color:rgba(255,255,255,.8)}
+
+/* patrocinadores */
+.brands{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:8px}
+.slot{border:1px dashed rgba(6,27,70,.3);height:86px;display:flex;align-items:center;justify-content:center;color:#93A1B8;font-size:12px;letter-spacing:.12em;text-transform:uppercase;background:#fff}
+.deadline{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:30px}
+.deadline div{background:var(--navy);padding:20px}
+.deadline b{display:block;font-family:'Archivo Black',sans-serif;font-size:22px;color:var(--gold)}
+.deadline span{font-size:13.5px;color:rgba(255,255,255,.75)}
+
+/* faq */
+details{border-bottom:1px solid #D8DFEA;padding:4px 0}
+summary{cursor:pointer;list-style:none;padding:18px 40px 18px 0;font-weight:700;font-size:17px;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:6px;top:15px;font-size:24px;color:var(--gold);font-weight:700;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin:0 0 20px;color:var(--muted);max-width:70ch}
+
+/* cta final */
+.final{background:var(--navy);color:#fff}
+.final .display{font-size:clamp(30px,5.4vw,58px);max-width:18ch}
+
+/* rodapé */
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:54px 0 40px;font-size:14.5px}
+footer img{height:34px;margin-bottom:24px}
+footer a{color:var(--gold);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.foot-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px}
+.foot-grid h4{margin:0 0 10px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#fff}
+.foot-bottom{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);font-size:13px;color:rgba(255,255,255,.5)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <img src="data:image/png;base64,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" alt="Confederação Brasileira de Pickleball e Associação de Pickleball do Rio de Janeiro">
+    <nav class="menu" aria-label="Navegação principal">
+      <a href="#evento">O evento</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#inscricoes">Inscrições</a>
+      <a href="#sede">Sede</a>
+      <a href="#patrocinio">Patrocínio</a>
+      <a href="#parceiros">Parceiros</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn-gold btn-sm" href="#inscricoes">Inscreva-se</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero dots">
+  <div class="wrap">
+
+    <!-- ESPAÇO RESERVADO AO NAMING RIGHTS
+         Quando a cota for fechada, troque o bloco abaixo pelo logo do patrocinador
+         em versão monocromática branca, acima da régua dourada:
+         <img src="logo-patrocinador-branco.svg" alt="Nome do patrocinador" style="height:54px;margin-bottom:26px">
+    -->
+
+    <hr class="rule">
+    <h1 class="display">Copa do Brasil<br>de Pickleball<br><span class="year">2026</span></h1>
+
+    <p class="hero-meta">11, 12 e 13 de dezembro de 2026 · sexta, sábado e domingo
+      <span>Pickleball Barra, no Clube de Aeronáutica — Barra da Tijuca, Rio de Janeiro</span>
+    </p>
+
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="#inscricoes">Quero jogar</a>
+      <a class="btn btn-ghost" href="#patrocinio">Quero patrocinar</a>
+    </div>
+    <p class="hero-note">Competição oficial do calendário nacional · Realização APRJ · Chancela CBP · Resultados válidos para ranking CBP e DUPR · Mídia oficial: PKB Brasil</p>
+
+    <div class="count" id="contagem">
+      <p class="count-label">Falta para a bola subir</p>
+      <div class="unit"><div class="num" id="d">—</div><div class="cap">dias</div></div>
+      <div class="unit"><div class="num" id="h">—</div><div class="cap">horas</div></div>
+      <div class="unit"><div class="num" id="m">—</div><div class="cap">minutos</div></div>
+      <div class="unit"><div class="num" id="s">—</div><div class="cap">segundos</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAIXA INSTITUCIONAL CBP ================= -->
+<section class="soft" style="padding:30px 0;border-bottom:1px solid #D8DFEA">
+  <div class="wrap">
+    <div class="cols" style="grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:24px">
+      <div class="item" style="border-top-color:var(--green)"><h3>Chancela CBP</h3><p>Competição oficial do calendário nacional da Confederação Brasileira de Pickleball.</p></div>
+      <div class="item" style="border-top-color:var(--green)"><h3>Ranking CBP e DUPR</h3><p>Resultados validados para o ranking nacional de classes e para o rating DUPR.</p></div>
+      <div class="item" style="border-top-color:var(--green)"><h3>Sistema Pickleball Integrado</h3><p>Inscrição, chaveamento, controle de atletas e resultados na plataforma oficial.</p></div>
+      <div class="item" style="border-top-color:var(--green)"><h3>Arbitragem designada</h3><p>Equipe de arbitragem e regulamento conforme as normas técnicas da CBP.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= O EVENTO ================= -->
+<section class="block light" id="evento">
+  <div class="wrap cols-2">
+    <div>
+      <p class="eyebrow" style="color:var(--navy)">O evento</p>
+      <h2 class="title">Três dias para decidir<br>o título nacional</h2>
+      <p class="lead">A Copa do Brasil é uma das competições mais importantes do calendário da Confederação Brasileira de Pickleball — e em 2026 ela é do Rio. Uma arena montada com padrão de evento profissional, transmissão ao vivo da quadra central, torneio corporativo, área de marcas e atletas de todo o país disputando categorias amadoras e profissionais.</p>
+      <p class="lead" style="margin-top:18px">Você joga dentro de um clube na Barra da Tijuca, com estacionamento, vestiário, restaurante e sombra — não em um galpão improvisado.</p>
+    </div>
+    <div class="cols" style="grid-template-columns:1fr 1fr">
+      <div class="item"><h3>Chaveamento publicado antes</h3><p>Você sabe com quem joga e a que horas antes de sair de casa, com mesa técnica no local durante os três dias.</p></div>
+      <div class="item"><h3>Transmissão e cobertura</h3><p>Quadra central ao vivo, cobertura fotográfica e conteúdo diário com o PKB Brasil, mídia oficial do evento.</p></div>
+      <div class="item"><h3>Kit do atleta</h3><p>Camiseta oficial, credencial, hidratação e brindes dos patrocinadores na retirada.</p></div>
+      <div class="item"><h3>Atendimento médico</h3><p>Primeiros socorros e atendimento pré-hospitalar no local durante os três dias de competição.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NÚMEROS ================= -->
+<section class="block dark dots">
+  <div class="wrap">
+    <p class="eyebrow">Dimensão</p>
+    <h2 class="title">A maior Copa do Brasil já produzida</h2>
+    <div class="stats">
+      <div><div class="n">400+</div><p>atletas de todo o território nacional</p></div>
+      <div><div class="n">20+</div><p>categorias por idade e nível técnico</p></div>
+      <div><div class="n">10+</div><p>quadras em padrão de competição</p></div>
+      <div><div class="n">700+</div><p>jogos ao longo dos três dias</p></div>
+      <div><div class="n">2.000+</div><p>pessoas circulando entre atletas, famílias e público</p></div>
+    </div>
+    <p class="small">Metas de produção para a edição 2026, construídas a partir do histórico recente de eventos nacionais da modalidade.</p>
+  </div>
+</section>
+
+<!-- ================= CATEGORIAS ================= -->
+<section class="block light" id="categorias">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--navy)">Categorias</p>
+    <h2 class="title">Tem categoria para o seu jogo</h2>
+    <p class="lead" style="margin-bottom:34px">Disputa em duplas, com chaves separadas por nível técnico e faixa etária. A grade final é publicada no regulamento oficial junto com a abertura das inscrições.</p>
+
+    <div class="cat"><b>Duplas masculinas</b><p>Níveis 2.5 · 3.0 · 3.5 · 4.0 · 4.5 · 5.0 e PRO</p></div>
+    <div class="cat"><b>Duplas femininas</b><p>Níveis 2.5 · 3.0 · 3.5 · 4.0 · 4.5 · 5.0 e PRO</p></div>
+    <div class="cat"><b>Duplas mistas</b><p>Níveis 2.5 · 3.0 · 3.5 · 4.0 · 4.5 · 5.0 e PRO</p></div>
+    <div class="cat"><b>Faixas etárias</b><p>19+ · 35+ · 50+ · 60+, conforme número de inscritos por chave</p></div>
+    <div class="cat"><b>Kids e juvenil</b><p>Sub 12 · Sub 14 · Sub 18, em duplas livres e categorias PRO</p></div>
+    <div class="cat"><b>Torneio corporativo</b><p>Chave de convidados de empresas patrocinadoras, disputada em um dos dias do evento</p></div>
+
+    <p class="small">A abertura de cada chave depende do número mínimo de duplas inscritas. Categorias com poucas inscrições podem ser agrupadas pela organização, conforme o regulamento.</p>
+  </div>
+</section>
+
+<!-- ================= INSCRIÇÕES ================= -->
+<section class="block soft" id="inscricoes">
+  <div class="wrap cols-2">
+    <div>
+      <p class="eyebrow" style="color:var(--navy)">Inscrições</p>
+      <h2 class="title">Como se inscrever</h2>
+      <p class="lead">As inscrições são feitas pelo Sistema Pickleball Integrado, a plataforma oficial da CBP. Você escolhe as categorias, paga online e acompanha o chaveamento pelo mesmo link.</p>
+      <ol style="color:var(--muted);padding-left:20px;margin:22px 0 26px">
+        <li style="margin-bottom:8px">Crie ou acesse o seu perfil no Sistema Pickleball Integrado.</li>
+        <li style="margin-bottom:8px">Selecione a Copa do Brasil de Pickleball 2026 e as categorias que vai jogar.</li>
+        <li style="margin-bottom:8px">Confirme o parceiro de dupla e aceite o termo de responsabilidade médica.</li>
+        <li>Finalize o pagamento — a vaga só é garantida após a confirmação.</li>
+      </ol>
+      <a class="btn btn-navy" href="#" id="link-inscricao">Ir para a inscrição</a>
+      <p class="small">Substitua este botão pelo link direto do torneio no Sistema Pickleball Integrado quando a página do evento for publicada.</p>
+    </div>
+
+    <div>
+      <h3 style="font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:18px;margin:0 0 4px">Valores por atleta <span class="tag">a confirmar</span></h3>
+      <p class="small" style="margin-top:4px">O valor cai a cada categoria adicional. Associados da APRJ têm desconto.</p>
+      <table>
+        <thead>
+          <tr><th>Categoria</th><th>Valor</th><th>Associado APRJ</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1ª categoria</td><td class="val">R$ 180</td><td class="val">R$ 120</td></tr>
+          <tr><td>2ª categoria</td><td class="val">R$ 140</td><td class="val">R$ 100</td></tr>
+          <tr><td>3ª categoria</td><td class="val">R$ 100</td><td class="val">R$ 80</td></tr>
+          <tr><td>4ª categoria em diante</td><td class="val">R$ 100</td><td class="val">R$ 80</td></tr>
+        </tbody>
+      </table>
+      <p class="small"><b>Prazos:</b> inscrições abertas até 04/12/2026 · cancelamentos com reembolso até 04/12/2026 · chaveamento publicado em 07/12/2026.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROGRAMAÇÃO ================= -->
+<section class="block light">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--navy)">Programação</p>
+    <h2 class="title">Como são os três dias</h2>
+    <div class="days">
+      <div class="day">
+        <h3>Sexta</h3>
+        <p class="date">11 de dezembro · 7h às 22h</p>
+        <ul>
+          <li>Credenciamento e retirada do kit</li>
+          <li>Abertura oficial</li>
+          <li>Fases classificatórias</li>
+          <li>Torneio corporativo</li>
+        </ul>
+      </div>
+      <div class="day">
+        <h3>Sábado</h3>
+        <p class="date">12 de dezembro · 7h às 22h</p>
+        <ul>
+          <li>Chaves principais por nível</li>
+          <li>Categorias kids e juvenil</li>
+          <li>Ativações das marcas e feira de expositores</li>
+          <li>Transmissão ao vivo da quadra central</li>
+        </ul>
+      </div>
+      <div class="day">
+        <h3>Domingo</h3>
+        <p class="date">13 de dezembro · 7h às 22h</p>
+        <ul>
+          <li>Semifinais</li>
+          <li>Finais na quadra central</li>
+          <li>Cerimônia de premiação</li>
+          <li>Encerramento</li>
+        </ul>
+      </div>
+    </div>
+    <p class="small">Programação preliminar. A grade horária definitiva é publicada com o chaveamento.</p>
+  </div>
+</section>
+
+<!-- ================= SEDE ================= -->
+<section class="block dark dots" id="sede">
+  <div class="wrap cols-2">
+    <div>
+      <p class="eyebrow">A sede</p>
+      <h2 class="title">Pickleball Barra,<br>no Clube de Aeronáutica</h2>
+      <p class="lead">Av. Rachel de Queiroz, Barra da Tijuca — Rio de Janeiro / RJ. Um complexo esportivo fechado, seguro e com estrutura de clube, na região mais nobre da cidade.</p>
+      <div class="legacy">
+        <div class="n">R$ 31,8 milhões</div>
+        <p>foi o investimento público na reforma do clube para os Jogos Rio 2016, quando a sede funcionou como centro de treinamento olímpico e paralímpico.</p>
+      </div>
+    </div>
+    <div>
+      <ul class="venue-facts">
+        <li>Quadras de pickleball em padrão de competição</li>
+        <li>Estacionamento amplo dentro do clube</li>
+        <li>Vestiários, restaurante, bares e piscina</li>
+        <li>Área de hospitalidade e lounge de patrocinadores</li>
+        <li>Acesso controlado por credenciamento nominal</li>
+      </ul>
+      <p class="small" style="margin-top:22px">O acesso ao clube depende de credenciamento prévio. A lista de atletas, acompanhantes, imprensa e fornecedores é enviada pela organização — cadastre-se no prazo informado por e-mail para não ter problema na portaria.</p>
+      <a class="btn btn-ghost" style="margin-top:20px" href="https://www.google.com/maps/search/?api=1&query=Clube+de+Aeron%C3%A1utica+Barra+da+Tijuca" target="_blank" rel="noopener">Ver no mapa</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PATROCÍNIO ================= -->
+<section class="block light" id="patrocinio">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--navy)">Patrocínio</p>
+    <h2 class="title">Sua marca dentro do<br>esporte que mais cresce no mundo</h2>
+    <p class="lead">O pickleball brasileiro ainda não tem marca dominante. Quem entra agora não compra mídia: ocupa uma posição de pioneiro, com custo de entrada de esporte emergente e visibilidade de esporte em explosão. Três dias, público classe A/B e permanência de 6 a 10 horas por dia dentro da arena.</p>
+
+    <div class="cols" style="margin-top:36px">
+      <div class="item"><h3>Naming rights</h3><p>A marca assina o nome oficial da competição e acompanha o evento em toda a comunicação. Cota exclusiva.</p></div>
+      <div class="item"><h3>Cotas Master, Ouro, Prata e Bronze</h3><p>Quadras assinadas, estande, backdrop, kit do atleta, conteúdo e cortesias VIP.</p></div>
+      <div class="item"><h3>Produtos avulsos</h3><p>Torneio corporativo, lounge VIP, premiação, hidratação, patrocínio de categoria e estande de expositor.</p></div>
+    </div>
+
+    <div style="margin-top:44px">
+      <h3 style="font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:18px;margin:0 0 16px">Marcas que constroem esta edição</h3>
+      <div class="brands">
+        <div class="slot">Espaço disponível</div>
+        <div class="slot">Espaço disponível</div>
+        <div class="slot">Espaço disponível</div>
+        <div class="slot">Espaço disponível</div>
+        <div class="slot">Espaço disponível</div>
+        <div class="slot">Espaço disponível</div>
+      </div>
+      <p class="small">Troque cada bloco pelo logo do patrocinador à medida que as cotas forem fechadas, respeitando a hierarquia de marcas do manual de identidade visual.</p>
+
+      <h3 style="font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:18px;margin:34px 0 16px">Parceiras institucionais da CBP</h3>
+      <div class="brands">
+        <div class="slot">Bola oficial</div>
+        <div class="slot">Sistema de ranking</div>
+        <div class="slot">Parceira nacional</div>
+      </div>
+      <p class="small">Marcas vinculadas a acordos nacionais da CBP têm exposição garantida na condição de parceiras institucionais, conforme a Cláusula 7.2.2 do Contrato de Cessão. A relação final é informada pela CBP até 15 dias antes do evento e define as categorias bloqueadas para as cotas comerciais.</p>
+    </div>
+
+    <div style="margin-top:36px;display:flex;gap:14px;flex-wrap:wrap">
+      <a class="btn btn-navy" href="mailto:comercial@aprj.com.br?subject=Proposta%20comercial%20—%20Copa%20do%20Brasil%20de%20Pickleball%202026">Receber a proposta comercial</a>
+      <a class="btn btn-gold" href="https://wa.me/5521000000000?text=Ol%C3%A1!%20Quero%20falar%20sobre%20patroc%C3%ADnio%20da%20Copa%20do%20Brasil%20de%20Pickleball%202026" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRAZOS COMERCIAIS ================= -->
+<section class="block dark" style="padding-top:clamp(40px,6vw,64px);padding-bottom:clamp(40px,6vw,64px)">
+  <div class="wrap">
+    <p class="eyebrow">Janela de fechamento</p>
+    <h2 class="title" style="font-size:clamp(22px,3vw,30px)">A produção gráfica de quadra, backdrop e kit do atleta exige antecedência</h2>
+    <div class="deadline">
+      <div><b>15 / out</b><span>Naming rights e Master</span></div>
+      <div><b>07 / nov</b><span>Ouro e Prata</span></div>
+      <div><b>21 / nov</b><span>Bronze, estandes e permutas</span></div>
+      <div><b>28 / nov</b><span>Entrega final de artes</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="block light" id="duvidas">
+  <div class="wrap" style="max-width:860px">
+    <p class="eyebrow" style="color:var(--navy)">Dúvidas</p>
+    <h2 class="title">Perguntas frequentes</h2>
+
+    <details>
+      <summary>Preciso ser filiado à CBP ou à APRJ para jogar?</summary>
+      <p>Não. A competição é aberta a atletas de todo o Brasil. Associados da APRJ têm desconto no valor da inscrição.</p>
+    </details>
+    <details>
+      <summary>Em quantas categorias posso me inscrever?</summary>
+      <p>Você pode jogar em mais de uma categoria, e o valor por categoria cai a partir da segunda inscrição. A organização monta a grade horária para evitar conflito entre chaves, mas jogos simultâneos podem acontecer em casos extremos.</p>
+    </details>
+    <details>
+      <summary>Os resultados valem para ranking e DUPR?</summary>
+      <p>Sim. Os resultados são lançados no Sistema Pickleball Integrado e validados para o ranking da CBP e para o DUPR.</p>
+    </details>
+    <details>
+      <summary>Ainda não tenho parceiro de dupla. Posso me inscrever?</summary>
+      <p>Pode. Faça a inscrição e informe a organização — mantemos uma lista de atletas procurando dupla por categoria e ajudamos na formação até o fechamento das inscrições.</p>
+    </details>
+    <details>
+      <summary>Quem não é atleta pode assistir?</summary>
+      <p>Sim. A entrada de público é gratuita, mediante credenciamento prévio na portaria do clube. Leve documento com foto.</p>
+    </details>
+    <details>
+      <summary>Tem estacionamento?</summary>
+      <p>Tem, dentro do próprio clube, sem custo adicional para atletas e acompanhantes credenciados.</p>
+    </details>
+    <details>
+      <summary>E se chover?</summary>
+      <p>A competição segue conforme decisão da coordenação técnica. Havendo interrupção, a grade é reorganizada e comunicada pelos canais oficiais do evento.</p>
+    </details>
+    <details>
+      <summary>Sou jornalista ou criador de conteúdo. Como faço o credenciamento?</summary>
+      <p>Escreva para o e-mail de imprensa com veículo, nome completo e documento até cinco dias antes do evento.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ================= QUEM FAZ ================= -->
+<section class="block soft" style="padding-top:clamp(40px,6vw,64px);padding-bottom:clamp(40px,6vw,64px)" id="parceiros">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--navy)">Quem faz a Copa do Brasil 2026</p>
+    <div class="cols" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin-top:10px">
+      <div class="item"><h3>Realização</h3><p>Associação de Pickleball do Rio de Janeiro — APRJ</p></div>
+      <div class="item"><h3>Chancela</h3><p>Confederação Brasileira de Pickleball — CBP</p></div>
+      <div class="item"><h3>Host e sede oficial</h3><p>Pickleball Barra, no Clube de Aeronáutica</p></div>
+      <div class="item"><h3>Mídia oficial</h3><p>PKB Brasil — cobertura, conteúdo e transmissão</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="block final dots">
+  <div class="wrap">
+    <hr class="rule">
+    <h2 class="display" style="font-size:clamp(30px,5.4vw,56px)">O pickleball brasileiro está sendo construído agora.</h2>
+    <p class="lead" style="margin-top:22px">Entre em quadra na edição que vai virar referência — como atleta ou como marca.</p>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="#inscricoes">Quero jogar</a>
+      <a class="btn btn-ghost" href="#patrocinio">Quero patrocinar</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RODAPÉ ================= -->
+<footer>
+  <div class="wrap">
+    <img src="data:image/png;base64,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" alt="CBP e APRJ">
+    <div class="foot-grid">
+      <div>
+        <h4>Evento</h4>
+        Copa do Brasil de Pickleball 2026<br>
+        11, 12 e 13 de dezembro de 2026<br>
+        Pickleball Barra, no Clube de Aeronáutica<br>
+        Barra da Tijuca, Rio de Janeiro / RJ
+      </div>
+      <div>
+        <h4>Atletas</h4>
+        <a href="#inscricoes">Inscrições</a><br>
+        <a href="#categorias">Categorias</a><br>
+        <a href="#duvidas">Perguntas frequentes</a><br>
+        <a href="#">Regulamento oficial</a>
+      </div>
+      <div>
+        <h4>Marcas e imprensa</h4>
+        <a href="mailto:comercial@aprj.com.br">comercial@aprj.com.br</a><br>
+        <a href="mailto:imprensa@aprj.com.br">imprensa@aprj.com.br</a><br>
+        <a href="#patrocinio">Proposta de patrocínio</a>
+      </div>
+      <div>
+        <h4>Siga</h4>
+        <a href="https://instagram.com/pkbbrasil" target="_blank" rel="noopener">@pkbbrasil — mídia oficial</a><br>
+        <a href="#">Instagram APRJ</a><br>
+        <a href="#">Instagram CBP</a><br>
+        <a href="#">Pickleball Barra</a>
+      </div>
+    </div>
+    <p class="foot-bottom">Realização: Associação de Pickleball do Rio de Janeiro (APRJ) · Chancela: Confederação Brasileira de Pickleball (CBP) · Host e sede oficial: Pickleball Barra, no Clube de Aeronáutica · Mídia oficial: PKB Brasil.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var alvo = new Date("2026-12-11T07:00:00-03:00").getTime();
+  var el = {d:document.getElementById('d'),h:document.getElementById('h'),m:document.getElementById('m'),s:document.getElementById('s')};
+  function pad(n){return n<10?'0'+n:''+n;}
+  function tick(){
+    var falta = alvo - Date.now();
+    if(falta <= 0){
+      document.getElementById('contagem').innerHTML = '<p class="count-label">Estamos em quadra</p><div class="num">Copa do Brasil 2026</div>';
+      return;
+    }
+    var seg = Math.floor(falta/1000);
+    el.d.textContent = Math.floor(seg/86400);
+    el.h.textContent = pad(Math.floor(seg%86400/3600));
+    el.m.textContent = pad(Math.floor(seg%3600/60));
+    el.s.textContent = pad(seg%60);
+  }
+  tick(); setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
