@@ -5,7 +5,7 @@ Não precisa instalar nada, não tem build, não tem dependência externa além 
 
 - **Evento:** 11, 12 e 13 de dezembro de 2026
 - **Local:** Pickleball Barra, no Clube de Aeronáutica — Barra da Tijuca, Rio de Janeiro
-- **Realização:** APRJ · **Chancela:** CBP · 
+- **Realização:** APRJ · **Chancela:** CBP ·
 
 ---
 
