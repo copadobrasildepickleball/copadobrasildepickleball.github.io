@@ -49,10 +49,16 @@ h3.sub{font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size
     radial-gradient(circle at 66% 78%, transparent 44px, rgba(255,255,255,.06) 45px, rgba(255,255,255,.06) 47px, transparent 48px),
     radial-gradient(circle at 86% 88%, transparent 18px, rgba(255,255,255,.09) 19px, rgba(255,255,255,.09) 21px, transparent 22px);}
 .dots > *{position:relative;z-index:1}
+.lang{display:flex;gap:6px;align-items:center;margin-left:auto;font-size:13px;font-weight:700;letter-spacing:.06em}
+.lang a{color:rgba(255,255,255,.6);text-decoration:none;padding:4px 7px;border:1px solid transparent}
+.lang a:hover{color:#fff}
+.lang a.on{color:var(--navy);background:var(--gold)}
+@media(max-width:1000px){.lang{margin-left:auto}}
+@media(max-width:430px){.bar{gap:10px}.bar img{height:24px}.lang{font-size:12px}.lang a{padding:3px 5px}.bar .btn-sm{padding:9px 13px;font-size:13px}}
 header{position:sticky;top:0;z-index:50;background:rgba(6,27,70,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;gap:22px;height:68px}
 .bar img{height:30px;width:auto}
-nav.menu{margin-left:auto;display:flex;gap:22px;align-items:center}
+nav.menu{margin-left:auto;margin-right:18px;display:flex;gap:22px;align-items:center}
 nav.menu a{color:rgba(255,255,255,.82);text-decoration:none;font-size:14px;font-weight:600;padding:6px 0;border-bottom:2px solid transparent}
 nav.menu a:hover,nav.menu a:focus-visible{color:#fff;border-bottom-color:var(--gold)}
 @media(max-width:1000px){nav.menu{display:none}}
@@ -107,6 +113,12 @@ td.val{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
 .card .date{font-size:13px;color:var(--muted);margin:4px 0 16px}
 .card ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
 .card li{margin-bottom:7px}
+.prz{margin-top:26px}
+.prz table{width:100%;border-collapse:collapse;font-size:15.5px}
+.prz th{text-align:left;padding:10px 12px;background:rgba(255,255,255,.08);color:var(--gold);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;border:0;font-weight:700}
+.prz td{padding:12px;border-bottom:1px solid rgba(255,255,255,.16);color:rgba(255,255,255,.85)}
+.prz td.v{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;color:#fff}
+.prz td b{color:#fff}
 .venue-facts{list-style:none;margin:22px 0 0;padding:0}
 .venue-facts li{padding:12px 0;border-top:1px solid var(--line);font-size:15.5px;color:rgba(255,255,255,.8)}
 .legacy{border:1px solid var(--gold);padding:24px;margin-top:26px}
@@ -152,6 +164,7 @@ footer a:hover{text-decoration:underline}
       <a href="#rio">Rio</a>
       <a href="#duvidas">Dúvidas</a>
     </nav>
+    <div class="lang"><a class="on" href="index.html" aria-current="page">PT</a><a href="es.html">ES</a></div>
     <a class="btn btn-gold btn-sm" href="#inscricoes">Inscreva-se</a>
   </div>
 </header>
@@ -311,8 +324,6 @@ footer a:hover{text-decoration:underline}
         <a class="btn btn-navy" href="https://cbpickleball.com.br/senior/tournament/20640" id="link-inscricao">Ir para a inscrição</a>
         <a class="btn btn-outline" href="regulamento-copa-do-brasil-2026.pdf" id="link-regulamento">Ler o regulamento</a>
       </div>
-      <p class="small">Troque o link do botão de inscrição pelo endereço direto do torneio no Sistema Pickleball Integrado e suba o PDF do regulamento no repositório com esse nome de arquivo.</p>
-
       <div style="border-left:5px solid var(--gold);background:#fff;padding:22px 24px;margin-top:28px">
         <h3 style="font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:17px;margin:0 0 10px">Atletas estrangeiros</h3>
         <p style="margin:0;color:var(--muted);font-size:15.5px">O cadastro é feito normalmente pelo Sistema Pickleball Integrado, na opção de atleta estrangeiro. O pagamento da inscrição não é processado pela plataforma: fale com a APRJ pelo WhatsApp para receber as instruções.</p>
@@ -377,13 +388,23 @@ footer a:hover{text-decoration:underline}
     <div>
       <p class="eyebrow">Premiação</p>
       <h2 class="title">R$ 35.000<br>em dinheiro</h2>
-      <p class="lead">Distribuídos entre as categorias da classe Pró e, a critério da organização, da classe Avançado. Os valores por categoria são anunciados até 01/11/2026 no portal oficial e no Sistema Pickleball Integrado.</p>
+      <p class="lead">Premiação em dinheiro nas classes Pró, 50+ e Sub 18, em cinco categorias cada uma: simples masculino e feminino e duplas masculina, feminina e mista. Os valores abaixo são por atleta.</p>
     </div>
     <div>
-      <ul class="venue-facts">
-        <li><b>Duplas e Simples Pró (Open)</b> — valores por categoria até 01/11</li>
-        <li><b>Duplas e Simples 40+ Open e Pró 50+</b> — valores por categoria até 01/11</li>
-        <li><b>Classe Avançado</b> — premiação a confirmar pela organização</li>
+      <div class="prz">
+        <div class="scroll">
+          <table>
+            <thead><tr><th>Classe</th><th>1º lugar</th><th>2º lugar</th><th>3º lugar</th></tr></thead>
+            <tbody>
+              <tr><td><b>Pró</b></td><td class="v">R$ 1.700</td><td class="v">R$ 700</td><td class="v">R$ 350</td></tr>
+              <tr><td><b>50+</b></td><td class="v">R$ 500</td><td class="v">R$ 300</td><td class="v">R$ 150</td></tr>
+              <tr><td><b>Sub 18</b></td><td class="v">R$ 400</td><td class="v">R$ 175</td><td class="v">R$ 100</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small">Valores por atleta, em cada uma das cinco categorias da classe. Nas duplas, cada atleta recebe o valor indicado.</p>
+      </div>
+      <ul class="venue-facts" style="margin-top:26px">
         <li><b>Todas as demais categorias</b> — medalhas para campeão, vice e 3º lugar, mais brindes dos patrocinadores</li>
       </ul>
       <p class="small">A premiação em dinheiro depende de no mínimo 4 duplas ou 4 atletas na categoria; abaixo disso, apenas medalhas. Com menos de 8 inscritos, o valor é ajustado proporcionalmente ou substituído por produtos. Pagamento por transferência em até 15 dias úteis. A premiação de cada categoria acontece logo após a final, no pódio oficial; as finais Pró da Quadra Central têm cerimônia própria no encerramento de domingo.</p>
