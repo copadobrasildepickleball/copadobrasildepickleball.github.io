@@ -113,12 +113,13 @@ td.val{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
 .card .date{font-size:13px;color:var(--muted);margin:4px 0 16px}
 .card ul{margin:0;padding-left:18px;color:var(--muted);font-size:15px}
 .card li{margin-bottom:7px}
-.prz{margin-top:26px}
-.prz table{width:100%;border-collapse:collapse;font-size:15.5px}
-.prz th{text-align:left;padding:10px 12px;background:rgba(255,255,255,.08);color:var(--gold);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;border:0;font-weight:700}
-.prz td{padding:12px;border-bottom:1px solid rgba(255,255,255,.16);color:rgba(255,255,255,.85)}
-.prz td.v{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;color:#fff}
-.prz td b{color:#fff}
+.przs{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:26px}
+.przc{border:1px solid rgba(255,255,255,.22);padding:26px 24px}
+.przc h4{margin:0 0 14px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.65);font-weight:700}
+.przc .big{font-family:'Archivo Black',sans-serif;font-size:clamp(34px,4.6vw,46px);line-height:1;color:var(--gold);font-variant-numeric:tabular-nums}
+.przc .cap{margin:12px 0 0;font-size:14px;line-height:1.45;color:rgba(255,255,255,.72)}
+.przc .brk{margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.16);font-size:13.5px;color:rgba(255,255,255,.6);line-height:1.6}
+.przc .brk b{color:#fff;font-variant-numeric:tabular-nums}
 .venue-facts{list-style:none;margin:22px 0 0;padding:0}
 .venue-facts li{padding:12px 0;border-top:1px solid var(--line);font-size:15.5px;color:rgba(255,255,255,.8)}
 .legacy{border:1px solid var(--gold);padding:24px;margin-top:26px}
@@ -391,19 +392,27 @@ footer a:hover{text-decoration:underline}
       <p class="lead">Premios en efectivo en las clases Pro, 50+ y Sub 18, en cinco categorías cada una: singles masculino y femenino y dobles masculino, femenino y mixto. Los valores de abajo son por atleta.</p>
     </div>
     <div>
-      <div class="prz">
-        <div class="scroll">
-          <table>
-            <thead><tr><th>Clase</th><th>1er puesto</th><th>2º puesto</th><th>3er puesto</th></tr></thead>
-            <tbody>
-              <tr><td><b>Pro</b></td><td class="v">R$ 1.700</td><td class="v">R$ 700</td><td class="v">R$ 350</td></tr>
-              <tr><td><b>50+</b></td><td class="v">R$ 500</td><td class="v">R$ 300</td><td class="v">R$ 150</td></tr>
-              <tr><td><b>Sub 18</b></td><td class="v">R$ 400</td><td class="v">R$ 175</td><td class="v">R$ 100</td></tr>
-            </tbody>
-          </table>
+      <div class="przs">
+        <div class="przc">
+          <h4>Clase Pro</h4>
+          <div class="big">R$ 22.000</div>
+          <p class="cap">Cinco categorías: singles masculino y femenino y dobles masculino, femenino y mixto.</p>
+          <div class="brk">Por atleta · 1º <b>R$ 1.700</b> · 2º <b>R$ 700</b> · 3º <b>R$ 350</b></div>
         </div>
-        <p class="small">Valores por atleta, en cada una de las cinco categorías de la clase. En dobles, cada atleta recibe el valor indicado.</p>
+        <div class="przc">
+          <h4>Clase 50+</h4>
+          <div class="big">R$ 7.600</div>
+          <p class="cap">Cinco categorías: singles masculino y femenino y dobles masculino, femenino y mixto.</p>
+          <div class="brk">Por atleta · 1º <b>R$ 500</b> · 2º <b>R$ 300</b> · 3º <b>R$ 150</b></div>
+        </div>
+        <div class="przc">
+          <h4>Clase Sub 18</h4>
+          <div class="big">R$ 5.400</div>
+          <p class="cap">Cinco categorías: singles masculino y femenino y dobles masculino, femenino y mixto.</p>
+          <div class="brk">Por atleta · 1º <b>R$ 400</b> · 2º <b>R$ 175</b> · 3º <b>R$ 100</b></div>
+        </div>
       </div>
+      <p class="small">En dobles, cada atleta recibe el valor indicado. Los totales por clase suman los R$ 35.000 de premios del evento.</p>
       <ul class="venue-facts" style="margin-top:26px">
         <li><b>Todas las demás categorías</b> — medallas para campeón, subcampeón y 3er puesto, más obsequios de los patrocinadores</li>
       </ul>
